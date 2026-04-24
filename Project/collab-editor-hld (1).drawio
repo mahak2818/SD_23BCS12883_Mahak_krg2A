@@ -1,0 +1,190 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="collab-editor-hld">
+    <mxGraphModel dx="1417" dy="1398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;&amp;nbsp;Collaborative Document Editor&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="600" x="225" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="fr-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;FUNCTIONAL REQUIREMENTS&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fr-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="180" width="300" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fr-content" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Users can create / open a document&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Multiple users edit the same document simultaneously&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Real-time broadcast of edits to all collaborators&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Rich-text formatting (bold, italic, headings, lists)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Document content persisted across sessions&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Export document as HTML file&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="280" x="20" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="nfr-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;NON-FUNCTIONAL REQUIREMENTS&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="360" x="345" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nfr-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- Low Latency: edit propagation &amp;lt; 200ms&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;- High Availability: 99.9% uptime&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;- Scalability: handle 100+ concurrent editors per doc&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;- Consistency: eventual consistency for concurrent edits&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;- Durability: document changes persisted to DB on every save&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;- Security: CORS controlled; session-based access per doc ID&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="360" x="345" y="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ce-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CORE ENTITIES&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="780" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-doc-title" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=1;strokeColor=#6c8ebf;" value="&lt;b&gt;Document&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="770" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-doc-fields" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- doc_id (PK)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- content (LOB)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="770" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-session-title" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=1;strokeColor=#82b366;" value="&lt;b&gt;WebSocket Session&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="920" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-session-fields" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- session_id&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- doc_id (subscription)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- connected_at&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="150" x="920" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-msg-title" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=1;strokeColor=#d6b656;" value="&lt;b&gt;Edit Message&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="1100" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-msg-fields" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- doc_id&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- content (HTML)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- timestamp&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="140" x="1100" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="clients-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;CLIENTS&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="30" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="330" width="200" x="220" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-icon" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.iot_device_gateway;" value="" vertex="1">
+          <mxGeometry height="90" width="90" x="270" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" value="&lt;b&gt;API Gateway &amp;amp; Load Balancer&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="225" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-details" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" value="- Authentication&lt;div&gt;- Authorization&lt;/div&gt;&lt;div&gt;- Routing&lt;/div&gt;&lt;div&gt;- Rate Limiting&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="245" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-http" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;" value="HTTP / REST" vertex="1">
+          <mxGeometry height="20" width="100" x="245" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-ws" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;" value="WebSocket (STOMP)" vertex="1">
+          <mxGeometry height="20" width="150" x="245" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c1-gw" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="470" as="sourcePoint" />
+            <mxPoint x="220" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-c2-gw" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="580" as="sourcePoint" />
+            <mxPoint x="220" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-c3-gw" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="690" as="sourcePoint" />
+            <mxPoint x="220" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="doc-svc-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="80" width="170" x="510" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-svc-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Document Service&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#555555&quot;&gt;DocumentController&lt;br&gt;DocumentService&lt;br&gt;DocumentRepository&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="515" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-rest" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="HTTP GET /api/document/{id}" vertex="1">
+          <mxGeometry height="20" width="190" x="420" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-docsvc" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b82f6;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="460" as="sourcePoint" />
+            <mxPoint x="510" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ws-svc-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="80" width="170" x="510" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ws-svc-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;WebSocket Service&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#555555&quot;&gt;WebSocketConfig&lt;br&gt;DocSocketController&lt;br&gt;STOMP Broker (/topic)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="515" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-ws" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="WS send /app/edit/{id}" vertex="1">
+          <mxGeometry height="20" width="170" x="420" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-wssvc" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="600" as="sourcePoint" />
+            <mxPoint x="510" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="broker-label" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;b&gt;STOMP Message Broker&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#555555&quot;&gt;In-Memory Simple Broker&lt;br&gt;Topic: /topic/document/{id}&lt;br&gt;Prefix: /app&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="520" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="e-wssvc-broker" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" value="routes to broker">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="640" as="sourcePoint" />
+            <mxPoint x="595" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-broker-gw" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;dashed=1;fontSize=10;fontStyle=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="broadcast /topic/document/{id}">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="740" />
+              <mxPoint x="440" y="580" />
+            </Array>
+            <mxPoint x="510" y="740" as="sourcePoint" />
+            <mxPoint x="420" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="docdb-icon" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;size=10;align=center;" value="&lt;b&gt;Document DB&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#555555&quot;&gt;H2 In-Memory (dev)&lt;br&gt;Table: document&lt;br&gt;Cols: id, content&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="140" x="790" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e-docsvc-db" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" value="JPA / Hibernate&lt;div&gt;findById · save&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="460" as="sourcePoint" />
+            <mxPoint x="790" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="100" width="170" x="790" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="fe-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Frontend (SPA)&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#555555&quot;&gt;index.html&lt;br&gt;SockJS + STOMP.js&lt;br&gt;ContentEditable editor&lt;br&gt;Rich-text Toolbar&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="795" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="e-docsvc-fe" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="Loads persisted content">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="520" as="sourcePoint" />
+            <mxPoint x="860" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tech-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=1;fontSize=12;align=left;verticalAlign=top;fontColor=#ffffff;" value="&lt;b&gt;Tech Stack&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Java 17 + Spring Boot 3&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Spring WebSocket (STOMP)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Spring Data JPA + H2&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• SockJS + STOMP.js&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Maven, Port 8080&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="790" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=12;align=left;verticalAlign=top;" value="&lt;b&gt;Edit Flow&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;① Browser opens doc → HTTP GET to Document Service&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;② SockJS connects → STOMP handshake via Gateway&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;③ Client subscribes to /topic/document/{docId}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;④ User types → STOMP send to /app/edit/{docId}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;⑤ Controller saves content to Document DB&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;⑥ @SendTo broadcasts to /topic/document/{docId}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;⑦ All subscribed browsers update editor in real-time&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="155" width="430" x="20" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="bcast-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#b45309;" value="Broadcast to all subscribers" vertex="1">
+          <mxGeometry height="40" width="80" x="150" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e-broker-clients" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="740" />
+              <mxPoint x="170" y="740" />
+              <mxPoint x="170" y="690" />
+            </Array>
+            <mxPoint x="510" y="740" as="sourcePoint" />
+            <mxPoint x="140" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="goKUVxhE6DuEPVajRuTS-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="HLD:" vertex="1">
+          <mxGeometry height="30" width="60" x="50" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="goKUVxhE6DuEPVajRuTS-2" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.users;" value="Users" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="goKUVxhE6DuEPVajRuTS-3" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.users;" value="Users" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="goKUVxhE6DuEPVajRuTS-4" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.users;" value="Users" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="645" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
