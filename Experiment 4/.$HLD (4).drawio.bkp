@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
   <diagram name="Page-1" id="mWxSTEh8HdeLiFktEfuu">
-    <mxGraphModel dx="3162" dy="-1256" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3257" dy="-1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2154,10 +2154,10 @@
         <mxCell id="9Xb9o_m172SwrXlVwWR_-636" edge="1" parent="1" source="9Xb9o_m172SwrXlVwWR_-637" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="9Xb9o_m172SwrXlVwWR_-640">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9Xb9o_m172SwrXlVwWR_-637" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;b&gt;KAFKA&lt;br&gt;Producer&lt;br&gt;&lt;/b&gt;" vertex="1">
+        <mxCell id="9Xb9o_m172SwrXlVwWR_-637" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;KAFKA&lt;br&gt;Producer&lt;br&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="78" x="-84" y="12486" as="geometry" />
         </mxCell>
-        <mxCell id="9Xb9o_m172SwrXlVwWR_-638" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consumer SVC" vertex="1">
+        <mxCell id="9Xb9o_m172SwrXlVwWR_-638" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Consumer SVC" vertex="1">
           <mxGeometry height="45" width="70" x="-85" y="12396" as="geometry" />
         </mxCell>
         <mxCell id="9Xb9o_m172SwrXlVwWR_-639" edge="1" parent="1" source="9Xb9o_m172SwrXlVwWR_-640" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
@@ -2165,7 +2165,7 @@
             <mxPoint x="-272.2857142857142" y="12606" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9Xb9o_m172SwrXlVwWR_-640" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Notification SVC" vertex="1">
+        <mxCell id="9Xb9o_m172SwrXlVwWR_-640" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Notification SVC" vertex="1">
           <mxGeometry height="46" width="65" x="-305" y="12478" as="geometry" />
         </mxCell>
         <mxCell id="9Xb9o_m172SwrXlVwWR_-641" edge="1" parent="1" source="9Xb9o_m172SwrXlVwWR_-596" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="9Xb9o_m172SwrXlVwWR_-637">
@@ -2241,7 +2241,7 @@
         <mxCell id="9Xb9o_m172SwrXlVwWR_-658" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Chunker&amp;nbsp;&lt;br&gt;service will &lt;br&gt;take that video" vertex="1">
           <mxGeometry height="60" width="100" x="980.0000000000001" y="12743.89" as="geometry" />
         </mxCell>
-        <mxCell id="9Xb9o_m172SwrXlVwWR_-659" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;b&gt;KAFKA&lt;br&gt;Producer&lt;br&gt;&lt;/b&gt;" vertex="1">
+        <mxCell id="9Xb9o_m172SwrXlVwWR_-659" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;KAFKA&lt;br&gt;Producer&lt;br&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="78" x="1210" y="12716" as="geometry" />
         </mxCell>
         <mxCell id="9Xb9o_m172SwrXlVwWR_-660" edge="1" parent="1" source="9Xb9o_m172SwrXlVwWR_-653" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.021;entryY=0.458;entryDx=0;entryDy=0;entryPerimeter=0;" target="9Xb9o_m172SwrXlVwWR_-659">
@@ -2287,7 +2287,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9Xb9o_m172SwrXlVwWR_-674" parent="1" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;" value="Video Encoder" vertex="1">
+        <mxCell id="9Xb9o_m172SwrXlVwWR_-674" parent="1" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d0cee2;strokeColor=none;" value="Video Encoder" vertex="1">
           <mxGeometry height="40" width="130" x="1184" y="12886" as="geometry" />
         </mxCell>
         <mxCell id="9Xb9o_m172SwrXlVwWR_-675" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Posting this small&lt;br&gt;&lt;br&gt;compressed format again into S3 Blob-storage" vertex="1">
